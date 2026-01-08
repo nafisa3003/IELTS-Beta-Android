@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Practice 📚"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_bg_light"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Quick Start / Daily Challenge -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_quick_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 Mock Test"
+            android:textColor="@color/on_primary_light"
+            android:backgroundTint="@color/primary_light"
+            app:cornerRadius="12dp"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_daily_challenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎯 Daily Challenge"
+            android:textColor="@color/on_primary_light"
+            android:backgroundTint="@color/primary_light"
+            app:cornerRadius="12dp"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Skill Practice Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skill Practice"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_bg_light"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Skill Buttons (Material, Rounded, Shadowed) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_listening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎧 Listening"
+            android:textColor="@color/on_primary_light"
+            android:backgroundTint="@color/primary_light"
+            app:cornerRadius="12dp"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_reading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📖 Reading"
+            android:textColor="@color/on_primary_light"
+            android:backgroundTint="@color/primary_light"
+            app:cornerRadius="12dp"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_writing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✍️ Writing"
+            android:textColor="@color/on_primary_light"
+            android:backgroundTint="@color/primary_light"
+            app:cornerRadius="12dp"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_speaking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗣 Speaking"
+            android:textColor="@color/on_primary_light"
+            android:backgroundTint="@color/primary_light"
+            app:cornerRadius="12dp"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Category Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_bg_light"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Practice Tests Carousel -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 Practice Tests"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/on_bg_light"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_practice_tests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"/>
+
+        <!-- Tips & Tricks Carousel -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Tips &amp; Tricks"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/on_bg_light"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"/>
+
+        <!-- Skill Items Header -->
+        <TextView
+            android:id="@+id/txt_skill_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a skill to start practice"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_bg_light"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- RecyclerView for practice items -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_practice_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Welcome -->
+        <TextView
+            android:id="@+id/txt_home_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good day 👋"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_bg_light"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Motivation Text -->
+        <TextView
+            android:id="@+id/txt_motivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You're doing great! 🚀"
+            android:textSize="14sp"
+            android:textColor="@color/on_bg_light"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Stats Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <!-- Target -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎯 Target"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txt_target_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.5"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Current -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✅ Current"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txt_current_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.5"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Days -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔥 Days"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txt_days_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Tests -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🧪 Tests"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txt_tests_taken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Word of the Day -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📘 Word of the Day"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingBottom="16dp" />
+
+        <!-- Situations -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎭 Situations"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_situations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingBottom="16dp" />
+
+        <!-- Challenges -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏆 Challenges"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_challenges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingBottom="16dp" />
+
+        <!-- Quick Actions -->
+        <Button
+            android:id="@+id/btn_practice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 Practice Now"
+            android:backgroundTint="@color/primary_light"
+            android:textColor="@color/on_primary_light"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btn_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 View Progress"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

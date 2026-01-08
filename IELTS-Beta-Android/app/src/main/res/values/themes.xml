@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Single DayNight theme -->
+    <style name="Theme.IELTSBeta" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Window / Background -->
+        <item name="android:windowBackground">@color/bg_light</item>
+
+        <!-- Primary / Accent -->
+        <item name="colorPrimary">@color/primary_light</item>
+        <item name="colorOnPrimary">@color/on_primary_light</item>
+
+        <!-- Surface / Cards / Nav / Inputs -->
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/on_surface_light</item>
+
+        <!-- Legacy text colors -->
+        <item name="android:textColorPrimary">@color/on_bg_light</item>
+        <item name="android:textColorSecondary">@color/on_bg_light</item>
+
+    </style>
+
+</resources>

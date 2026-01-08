@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">IELTS Beta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_7_5">7.5</string>
+    <string name="target_score">Target Score</string>
+    <string name="_5_days">5 days</string>
+    <string name="days_active">Days Active</string>
+    <string name="_3">3</string>
+    <string name="tests_taken">Tests Taken</string>
+    <string name="continue_practice">Continue Practice</string>
+    <string name="quick_access">Quick Access</string>
+    <string name="practice">Practice</string>
+    <string name="resources">Resources</string>
+    <string name="welcome_to_ielts_beta">Welcome to IELTS Beta!</string>
+    <string name="home">Home</string>
+    <string name="Practice">Practice</string>
+    <string name="progress">Progress</string>
+    <string name="profile">Profile</string>
+</resources>

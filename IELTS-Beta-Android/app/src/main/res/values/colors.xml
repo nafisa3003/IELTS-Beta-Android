@@ -1,0 +1,14 @@
+<resources>
+    <!-- Base colors for light theme -->
+    <color name="bg_light">#FAFAF7</color>           <!-- window & surfaces -->
+    <color name="on_bg_light">#122C4F</color>        <!-- primary text -->
+    <color name="primary_light">#3A4D61</color>      <!-- primary / accent -->
+    <color name="on_primary_light">#FFFFFF</color>   <!-- text on primary -->
+
+    <color name="surface_light">#FAFAF7</color>
+    <color name="on_surface_light">#122C4F</color>
+
+    <color name="card_default">#FAFAFA</color>
+    <color name="card_home">#F7F8FA</color>
+
+</resources>
