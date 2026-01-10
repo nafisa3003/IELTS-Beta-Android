@@ -128,6 +128,6 @@ The app provides a centralized platform where learners can manage their study go
 
 - `google-services.json` is **not included** in this repository for security reasons.
 - **Toast messages, filled forms, and minor UI states** are not shown — only main screens and key functionality.
-- **Practice cards, goals, and progress indicators** are linked entities — actions in one place reflect in others (e.g., goals update progress tab in real time).
+- **Home stats card, goals, and progress indicators** are linked entities — actions in one place reflect in others (e.g., goals update progress tab in real time).
 - **YouTube practice cards** redirect externally; the app shows only links.
 - **Local JSON file** handles the content cards; **Firebase** handles goal storage and real-time updates.
